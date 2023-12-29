@@ -1,0 +1,5 @@
+[H[2J[3Jrm: cannot remove '/home/yuzishu/glibc_share_memory': No such file or directory
+rm: cannot remove '/home/yuzishu/my_shared_memory': No such file or directory
+rm: cannot remove '/dev/shm/my_shared_memory': No such file or directory
+rm: cannot remove 'core*': No such file or directory
+rm: cannot remove '/home/yuzishu/share_folder/libsharetest1.0.0': No such file or directory

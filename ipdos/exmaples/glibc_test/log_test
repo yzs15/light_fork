@@ -1,0 +1,1047 @@
+[H[2J[3Jrm: cannot remove '/home/yuzishu/glibc_share_memory': No such file or directory
+rm: cannot remove '/home/yuzishu/my_shared_memory': No such file or directory
+rm: cannot remove '/dev/shm/my_shared_memory': No such file or directory
+rm: cannot remove '/home/yuzishu/share_folder/libsharetest1.0.0': No such file or directory
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libipdos.so mode=4000000
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500000000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /usr/local/lib/libipdos.so 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libipdos.so /usr/local/lib/libipdos.so
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa8000, name=libipdos.so, aux=7ffff7fa91e0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libc.so.6 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f750001e000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa8000, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libczmq.so.4 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500222000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libczmq.so.4 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa91e0, name=libczmq.so.4, aux=7ffff7fa6000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libzmq.so.5 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500296000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libzmq.so.5 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa91e0, name=libzmq.so.5, aux=7ffff7fa6520
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa91e0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa9710, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libzmq.so.5 /lib/x86_64-linux-gnu/libzmq.so.5
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6000, name=libzmq.so.5, aux=7ffff7fa6520
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libuuid.so.1 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500333000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libuuid.so.1 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6000, name=libuuid.so.1, aux=7ffff7fa6ac0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libsystemd.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f750033d000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libsystemd.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6000, name=libsystemd.so.0, aux=7ffff7fa6fe0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libpthread.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500405000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libpthread.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6000, name=libpthread.so.0, aux=7ffff7fa7500
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6000, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libbsd.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f750040b000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libbsd.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libbsd.so.0, aux=7ffff7fa7a90
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libsodium.so.23 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500424000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libsodium.so.23 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libsodium.so.23, aux=7ffff7fa4000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libpgm-5.3.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f750047d000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libpgm-5.3.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libpgm-5.3.so.0, aux=7ffff7fa4520
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libnorm.so.1 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f75004cf000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libnorm.so.1 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libnorm.so.1, aux=7ffff7fa4a40
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libgssapi_krb5.so.2 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f75005fb000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgssapi_krb5.so.2 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libgssapi_krb5.so.2, aux=7ffff7fa4f60
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libstdc++.so.6 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500650000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libstdc++.so.6 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libstdc++.so.6, aux=7ffff7fa5480
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libgcc_s.so.1 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f750087b000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcc_s.so.1 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6520, name=libgcc_s.so.1, aux=7ffff7fa59a0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6ac0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6ac0, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=liblzma.so.5 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f750089c000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/liblzma.so.5 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=liblzma.so.5, aux=7ffff7fa2000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libzstd.so.1 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f75008c8000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libzstd.so.1 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=libzstd.so.1, aux=7ffff7fa2520
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=liblz4.so.1 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500998000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/liblz4.so.1 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=liblz4.so.1, aux=7ffff7fa2a40
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libcap.so.2 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f75009b9000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libcap.so.2 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=libcap.so.2, aux=7ffff7fa2f60
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libgcrypt.so.20 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f75009c5000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcrypt.so.20 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=libgcrypt.so.20, aux=7ffff7fa3480
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa6fe0, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa7500, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libmd.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500b04000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libmd.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa7a90, name=libmd.so.0, aux=7ffff7fa3a60
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa7a90, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4000, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4000, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libpthread.so.0 /lib/x86_64-linux-gnu/libpthread.so.0
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4520, name=libpthread.so.0, aux=7ffff7fa7500
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libm.so.6 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500b12000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libm.so.6 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4520, name=libm.so.6, aux=7ffff7fa0000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4520, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libpthread.so.0 /lib/x86_64-linux-gnu/libpthread.so.0
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4a40, name=libpthread.so.0, aux=7ffff7fa7500
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libstdc++.so.6 /lib/x86_64-linux-gnu/libstdc++.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4a40, name=libstdc++.so.6, aux=7ffff7fa5480
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libm.so.6 /lib/x86_64-linux-gnu/libm.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4a40, name=libm.so.6, aux=7ffff7fa0000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libgcc_s.so.1 /lib/x86_64-linux-gnu/libgcc_s.so.1
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4a40, name=libgcc_s.so.1, aux=7ffff7fa59a0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4a40, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libkrb5.so.3 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500bfa000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkrb5.so.3 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4f60, name=libkrb5.so.3, aux=7ffff7fa05d0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libk5crypto.so.3 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500cc6000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libk5crypto.so.3 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4f60, name=libk5crypto.so.3, aux=7ffff7fa0af0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libcom_err.so.2 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500cf6000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libcom_err.so.2 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4f60, name=libcom_err.so.2, aux=7ffff7fa1010
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libkrb5support.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500cfd000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkrb5support.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4f60, name=libkrb5support.so.0, aux=7ffff7fa1530
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa4f60, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libm.so.6 /lib/x86_64-linux-gnu/libm.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa5480, name=libm.so.6, aux=7ffff7fa0000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa5480, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa5480, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libgcc_s.so.1 /lib/x86_64-linux-gnu/libgcc_s.so.1
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa5480, name=libgcc_s.so.1, aux=7ffff7fa59a0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa59a0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa2000, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa2520, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa2a40, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa2f60, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libgpg-error.so.0 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500d0c000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgpg-error.so.0 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa3480, name=libgpg-error.so.0, aux=7ffff7f9e000
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa3480, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa3a60, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa0000, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa0000, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libk5crypto.so.3 /lib/x86_64-linux-gnu/libk5crypto.so.3
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa05d0, name=libk5crypto.so.3, aux=7ffff7fa0af0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libcom_err.so.2 /lib/x86_64-linux-gnu/libcom_err.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa05d0, name=libcom_err.so.2, aux=7ffff7fa1010
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libkrb5support.so.0 /lib/x86_64-linux-gnu/libkrb5support.so.0
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa05d0, name=libkrb5support.so.0, aux=7ffff7fa1530
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libkeyutils.so.1 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500d33000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkeyutils.so.1 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa05d0, name=libkeyutils.so.1, aux=7ffff7f9e5d0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libresolv.so.2 mode=0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 7f7500d3b000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libresolv.so.2 0
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa05d0, name=libresolv.so.2, aux=7ffff7f9eaf0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa05d0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libkrb5support.so.0 /lib/x86_64-linux-gnu/libkrb5support.so.0
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa0af0, name=libkrb5support.so.0, aux=7ffff7fa1530
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa0af0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa1010, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa1010, name=ld-linux-x86-64.so.2, aux=7ffff7feab10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7fa1530, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7f9e000, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7f9e5d0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 7ffff7f9eaf0, name=libc.so.6, aux=7ffff7fa9710
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:1093, Func: _dl_open()): _dl_open 7ffff7fbd700 nsid= fffffffffffffffe nsid == LM_ID_NEWLM 0
+
+[LOG](File: dl-open.c:1154, Func: _dl_open()): _dl_open 7ffff7fbd700 nsid= fffffffffffffffe nsid == LM_ID_NEWLM 0
+
+[LOG](File: dl-open.c:1023, Func: dl_open_worker()): dl_open_worker nsid= fffffffffffffffe
+
+[LOG](File: dl-open.c:650, Func: dl_open_worker_begin()): dl_open_worker_begin 80000002 -4294967294 -18446744073709551614 1 libnss_db.so.2
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 7ffff7fa9710 7f750001e000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:762, Func: dl_open_worker_begin()):   nsid= 0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+service_name: libsharetest
+version 2.0.0
+shared_state_file_path: /home/yuzishu/share_folder/libsharetest2.0.0
+start_virtual_addr: 600000000000
+end_virtual_addr: 600800000000
+pid 2187469
+shared_memory_alloc() called with size: 5368709120
+initialize_shared_malloc at ptr 0x600000002000 0x600000002010
+[LOG](File: /home/yuzishu/Desktop/share_exp/ShareSoftState/src/overwrite/ipdos/ipdos/sharemalloc_dlmalloc.c:571, Func: dlopen()): dlopen __file=./libsharetest.so, mode=2
+
+_dl_get_new_namespace nsid= 1 dl_nss 1
+_dl_get_new_namespace nsid= 1 dl_nss 2
+dlmopen_doit
+[LOG](File: dl-open.c:1093, Func: _dl_open()): _dl_open 7ffff7fbd700 nsid= 1 nsid == LM_ID_NEWLM 0
+
+[LOG](File: dl-open.c:1154, Func: _dl_open()): _dl_open 7ffff7fbd700 nsid= 1 nsid == LM_ID_NEWLM 0
+
+[LOG](File: dl-open.c:1023, Func: dl_open_worker()): dl_open_worker nsid= 1
+
+[LOG](File: dl-open.c:690, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_nlist = 30
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[0] = 7ffff7fa8000 name= start=555555554000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[1] = 7ffff7fa91e0 name=/usr/local/lib/libipdos.so start=7f7500000000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[2] = 7ffff7fa9710 name=/home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 start=7f750001e000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[3] = 7ffff7fa6000 name=/lib/x86_64-linux-gnu/libczmq.so.4 start=7f7500222000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[4] = 7ffff7fa6520 name=/lib/x86_64-linux-gnu/libzmq.so.5 start=7f7500296000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[5] = 7ffff7feab10 name=/home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2 start=7ffff7fb0000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[6] = 7ffff7fa6ac0 name=/lib/x86_64-linux-gnu/libuuid.so.1 start=7f7500333000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[7] = 7ffff7fa6fe0 name=/lib/x86_64-linux-gnu/libsystemd.so.0 start=7f750033d000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[8] = 7ffff7fa7500 name=/lib/x86_64-linux-gnu/libpthread.so.0 start=7f7500405000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[9] = 7ffff7fa7a90 name=/lib/x86_64-linux-gnu/libbsd.so.0 start=7f750040b000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[10] = 7ffff7fa4000 name=/lib/x86_64-linux-gnu/libsodium.so.23 start=7f7500424000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[11] = 7ffff7fa4520 name=/lib/x86_64-linux-gnu/libpgm-5.3.so.0 start=7f750047d000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[12] = 7ffff7fa4a40 name=/lib/x86_64-linux-gnu/libnorm.so.1 start=7f75004cf000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[13] = 7ffff7fa4f60 name=/lib/x86_64-linux-gnu/libgssapi_krb5.so.2 start=7f75005fb000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[14] = 7ffff7fa5480 name=/lib/x86_64-linux-gnu/libstdc++.so.6 start=7f7500650000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[15] = 7ffff7fa59a0 name=/lib/x86_64-linux-gnu/libgcc_s.so.1 start=7f750087b000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[16] = 7ffff7fa2000 name=/lib/x86_64-linux-gnu/liblzma.so.5 start=7f750089c000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[17] = 7ffff7fa2520 name=/lib/x86_64-linux-gnu/libzstd.so.1 start=7f75008c8000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[18] = 7ffff7fa2a40 name=/lib/x86_64-linux-gnu/liblz4.so.1 start=7f7500998000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[19] = 7ffff7fa2f60 name=/lib/x86_64-linux-gnu/libcap.so.2 start=7f75009b9000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[20] = 7ffff7fa3480 name=/lib/x86_64-linux-gnu/libgcrypt.so.20 start=7f75009c5000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[21] = 7ffff7fa3a60 name=/lib/x86_64-linux-gnu/libmd.so.0 start=7f7500b04000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[22] = 7ffff7fa0000 name=/lib/x86_64-linux-gnu/libm.so.6 start=7f7500b12000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[23] = 7ffff7fa05d0 name=/lib/x86_64-linux-gnu/libkrb5.so.3 start=7f7500bfa000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[24] = 7ffff7fa0af0 name=/lib/x86_64-linux-gnu/libk5crypto.so.3 start=7f7500cc6000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[25] = 7ffff7fa1010 name=/lib/x86_64-linux-gnu/libcom_err.so.2 start=7f7500cf6000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[26] = 7ffff7fa1530 name=/lib/x86_64-linux-gnu/libkrb5support.so.0 start=7f7500cfd000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[27] = 7ffff7f9e000 name=/lib/x86_64-linux-gnu/libgpg-error.so.0 start=7f7500d0c000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[28] = 7ffff7f9e5d0 name=/lib/x86_64-linux-gnu/libkeyutils.so.1 start=7f7500d33000
+[LOG](File: dl-open.c:694, Func: dl_open_worker_begin()): tmp_map->l_searchlist.r_list[29] = 7ffff7f9eaf0 name=/lib/x86_64-linux-gnu/libresolv.so.2 start=7f7500d3b000
+[LOG](File: dl-open.c:762, Func: dl_open_worker_begin()):   nsid= 1
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=./libsharetest.so mode=90000002
+
+[LOG](File: dl-open.c:228, Func: _dl_find_dso_for_object()): name=/usr/local/lib/libipdos.so 7ffff7fa91e0 7f7500000000 ns 0 l->ns 0
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 600000003000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list ./libsharetest.so 1
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-open.c:766, Func: dl_open_worker_begin()): 3.2 _dl_map_object ./libsharetest.so, new addr 600000002870 
+
+[LOG](File: dl-open.c:788, Func: dl_open_worker_begin()):  if (__glibc_unlikely (new->l_searchlist.r_list != NULL)) 0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libstdc++.so.6 mode=80000000
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 60000000a000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libstdc++.so.6 1
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000002870, name=libstdc++.so.6, aux=600000009290
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libc.so.6 mode=80000000
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 600000236000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 1
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000002870, name=libc.so.6, aux=600000234d10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libm.so.6 mode=80000000
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 60000043a000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libm.so.6 1
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000009290, name=libm.so.6, aux=6000004397c0
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000009290, name=libc.so.6, aux=600000234d10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=ld-linux-x86-64.so.2 mode=80000000
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000009290, name=ld-linux-x86-64.so.2, aux=600000522220
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:1428, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd name=libgcc_s.so.1 mode=80000000
+
+[LOG](File: dl-load.c:457, Func: yuzishu_dl_map_segments()): _dl_map_segments  mappref 0 600000523000
+
+[LOG](File: dl-load.c:1971, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcc_s.so.1 1
+
+[LOG](File: dl-load.c:2004, Func: _dl_map_object_from_fd()): _dl_map_object_from_fd finished
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000009290, name=libgcc_s.so.1, aux=600000522800
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000234d10, name=ld-linux-x86-64.so.2, aux=600000522220
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 6000004397c0, name=libc.so.6, aux=600000234d10
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 6000004397c0, name=ld-linux-x86-64.so.2, aux=600000522220
+
+[LOG](File: dl-load.c:2508, Func: _dl_map_object()): _dl_map_object nsid=1
+
+[LOG](File: dl-load.c:2535, Func: _dl_map_object()): match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+
+[LOG](File: dl-deps.c:102, Func: openaux()): map = 600000522800, name=libc.so.6, aux=600000234d10
+
+[LOG](File: dl-open.c:856, Func: dl_open_worker_begin()):  struct r_debug *r = _dl_debug_update (args->nsid); start
+
+[LOG](File: dl-open.c:864, Func: dl_open_worker_begin()): if (__glibc_unlikely (GLRO(dl_debug_mask) & DL_DEBUG_SCOPES)) start
+
+[LOG](File: dl-open.c:894, Func: dl_open_worker_begin()): int relocation_in_progress = 0; start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:284, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:289, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-reloc.c:315, Func: _dl_relocate_object()): if (__glibc_unlikely (l->l_info[DT_TEXTREL] != NULL)) start
+
+[LOG](File: dl-open.c:945, Func: dl_open_worker_begin()): resize_scopes (new); start
+
+[LOG](File: dl-open.c:1052, Func: dl_open_worker()): dl_open_worker 4
+
+[LOG](File: /home/yuzishu/Desktop/share_exp/ShareSoftState/src/overwrite/ipdos/ipdos/sharemalloc_dlmalloc.c:605, Func: dlopen()): dlopen finish __file=./libsharetest.so, mode=2 0x600000002870
+
+s 0x600000002870
+---------------------------------------
+printf 0x6000002934b0
+This is share lib func 0x600000007030 11
+s 0x600000002870,  share_lib_func 0x600000004149 

@@ -1,0 +1,298 @@
+dlopen_doit 2 0 fffffffe fffffffe
+[H[2J[3J_dl_map_object nsid=0
+_dl_map_object_from_fd name=libipdos.so mode=4000000
+_dl_map_segments  mappref 0 7f7500000000
+_dl_map_object_from_fd _dl_add_to_namespace_list /usr/local/lib/libipdos.so 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libipdos.so /usr/local/lib/libipdos.so
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libczmq.so.4 mode=0
+_dl_map_segments  mappref 0 7f750001d000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libczmq.so.4 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libc.so.6 mode=0
+_dl_map_segments  mappref 0 7f7500091000
+_dl_map_object_from_fd _dl_add_to_namespace_list /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libzmq.so.5 mode=0
+_dl_map_segments  mappref 0 7f7500295000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libzmq.so.5 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libuuid.so.1 mode=0
+_dl_map_segments  mappref 0 7f7500332000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libuuid.so.1 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libsystemd.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff7ee0000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libsystemd.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libpthread.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff7edb000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libpthread.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libbsd.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff7ec3000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libbsd.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libsodium.so.23 mode=0
+_dl_map_segments  mappref 0 7ffff7e69000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libsodium.so.23 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libpgm-5.3.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff7e18000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libpgm-5.3.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libnorm.so.1 mode=0
+_dl_map_segments  mappref 0 7ffff7ced000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libnorm.so.1 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgssapi_krb5.so.2 mode=0
+_dl_map_segments  mappref 0 7ffff7c99000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgssapi_krb5.so.2 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libstdc++.so.6 mode=0
+_dl_map_segments  mappref 0 7ffff7a00000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libstdc++.so.6 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgcc_s.so.1 mode=0
+_dl_map_segments  mappref 0 7ffff7c79000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcc_s.so.1 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=liblzma.so.5 mode=0
+_dl_map_segments  mappref 0 7ffff7c4c000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/liblzma.so.5 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libzstd.so.1 mode=0
+_dl_map_segments  mappref 0 7ffff7931000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libzstd.so.1 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=liblz4.so.1 mode=0
+_dl_map_segments  mappref 0 7ffff7c2c000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/liblz4.so.1 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libcap.so.2 mode=0
+_dl_map_segments  mappref 0 7ffff7926000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libcap.so.2 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgcrypt.so.20 mode=0
+_dl_map_segments  mappref 0 7ffff77e8000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcrypt.so.20 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libmd.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff77db000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libmd.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+match libpthread.so.0 /lib/x86_64-linux-gnu/libpthread.so.0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libm.so.6 mode=0
+_dl_map_segments  mappref 0 7ffff76f4000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libm.so.6 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libpthread.so.0 /lib/x86_64-linux-gnu/libpthread.so.0
+_dl_map_object nsid=0
+match libstdc++.so.6 /lib/x86_64-linux-gnu/libstdc++.so.6
+_dl_map_object nsid=0
+match libm.so.6 /lib/x86_64-linux-gnu/libm.so.6
+_dl_map_object nsid=0
+match libgcc_s.so.1 /lib/x86_64-linux-gnu/libgcc_s.so.1
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libkrb5.so.3 mode=0
+_dl_map_segments  mappref 0 7ffff7629000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkrb5.so.3 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libk5crypto.so.3 mode=0
+_dl_map_segments  mappref 0 7ffff75fa000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libk5crypto.so.3 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libcom_err.so.2 mode=0
+_dl_map_segments  mappref 0 7ffff75f4000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libcom_err.so.2 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libkrb5support.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff75e6000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkrb5support.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libm.so.6 /lib/x86_64-linux-gnu/libm.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+match libgcc_s.so.1 /lib/x86_64-linux-gnu/libgcc_s.so.1
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgpg-error.so.0 mode=0
+_dl_map_segments  mappref 0 7ffff75be000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgpg-error.so.0 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+match libk5crypto.so.3 /lib/x86_64-linux-gnu/libk5crypto.so.3
+_dl_map_object nsid=0
+match libcom_err.so.2 /lib/x86_64-linux-gnu/libcom_err.so.2
+_dl_map_object nsid=0
+match libkrb5support.so.0 /lib/x86_64-linux-gnu/libkrb5support.so.0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libkeyutils.so.1 mode=0
+_dl_map_segments  mappref 0 7ffff75b7000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkeyutils.so.1 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libresolv.so.2 mode=0
+_dl_map_segments  mappref 0 7ffff75a3000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libresolv.so.2 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libkrb5support.so.0 /lib/x86_64-linux-gnu/libkrb5support.so.0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+ipdos_init
+-------------------main init-----------------------
+_dl_open 7ffff7fbe550 nsid= fffffffffffffffe nsid == LM_ID_NEWLM 0
+_dl_open 7ffff7fbe550 nsid= fffffffffffffffe nsid == LM_ID_NEWLM 0
+dl_open_worker  nsid= fffffffffffffffe
+dl_open_worker_begin 80000002 
+dl_open_worker_begin  nsid= 0
+_dl_map_object nsid=0
+-------------------main load service-----------------------
+_dl_get_new_namespace nsid= 1 dl_nss 1
+_dl_get_new_namespace nsid= 1 dl_nss 2
+_yuzishu_user_add_service 600000000c00 1, 600000000000 600800000000
+dlmopen_doit
+_dl_open 7ffff7fbe550 nsid= 1 nsid == LM_ID_NEWLM 0
+_dl_open 7ffff7fbe550 nsid= 1 nsid == LM_ID_NEWLM 0
+dl_open_worker  nsid= 1
+is_copy_from_share_env() && mode==(0x10000) 80010002 
+user_get_loaded_so_by_file_nsid so_list = 600000000c00 
+user_get_loaded_so_by_file_nsid return NULL
+dl_open_worker_begin  nsid= 1
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=./libsharetest.so mode=90010002
+_dl_map_segments  mappref 0 7ffff6593000
+_dl_map_object_from_fd _dl_add_to_namespace_list ./libsharetest.so 1
+_dl_map_object_from_fd finished
+3.2 _dl_map_object ./libsharetest.so, new addr 55555557bbc0 
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libstdc++.so.6 mode=80000000
+_dl_map_segments  mappref 0 7ffff6200000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libstdc++.so.6 1
+_dl_map_object_from_fd finished
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libc.so.6 mode=80000000
+_dl_map_segments  mappref 0 7ffff5e00000
+_dl_map_object_from_fd _dl_add_to_namespace_list /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 1
+_dl_map_object_from_fd finished
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=ld-linux-x86-64.so.2 mode=80000000
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libm.so.6 mode=80000000
+_dl_map_segments  mappref 0 7ffff64ac000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libm.so.6 1
+_dl_map_object_from_fd finished
+_dl_map_object nsid=1
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=1
+match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libgcc_s.so.1 mode=80000000
+_dl_map_segments  mappref 0 7ffff648c000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcc_s.so.1 1
+_dl_map_object_from_fd finished
+_dl_map_object nsid=1
+match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+_dl_map_object nsid=1
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+_dl_map_object nsid=1
+match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+_dl_map_object nsid=1
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+-------------------main start-----------------------
+This is share lib func 0x55555557ac20 11
+s 0x6000000023e0, func_t 0x600000004179 ret = 11 variable 0x55555557ac20 11
+This is share lib func 0x55555557ac20 12
+s 0x6000000023e0, func_t 0x600000004179 ret = 12 variable 0x55555557ac20 12

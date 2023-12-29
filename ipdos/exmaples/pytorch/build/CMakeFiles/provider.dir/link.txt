@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,-rpath=/home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build,--dynamic-linker=/home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2 CMakeFiles/provider.dir/provider.cpp.o -o provider  -lipods 

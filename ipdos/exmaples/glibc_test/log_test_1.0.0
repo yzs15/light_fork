@@ -1,0 +1,414 @@
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libipdos.so mode=4000000
+_dl_map_segments  mappref 0 7f7500000000
+is_share_malloc_inited 7ffff7fa96c0
+_dl_map_object_from_fd _dl_add_to_namespace_list /usr/local/lib/libipdos.so 0
+_dl_map_object_from_fd finished
+_dl_map_object nsid=0
+match libipdos.so /usr/local/lib/libipdos.so
+is_share_malloc_inited 7ffff7fa96c0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libczmq.so.4 mode=0
+_dl_map_segments  mappref 0 7f750001d000
+is_share_malloc_inited 7ffff7fa9be0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libczmq.so.4 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa9be0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libc.so.6 mode=0
+_dl_map_segments  mappref 0 7f7500091000
+is_share_malloc_inited 7ffff7fa6510
+_dl_map_object_from_fd _dl_add_to_namespace_list /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa6510
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa6510
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libzmq.so.5 mode=0
+_dl_map_segments  mappref 0 7f7500295000
+is_share_malloc_inited 7ffff7fa6a60
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libzmq.so.5 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa6a60
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libuuid.so.1 mode=0
+_dl_map_segments  mappref 0 7f7500332000
+is_share_malloc_inited 7ffff7fa6f80
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libuuid.so.1 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa6f80
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libsystemd.so.0 mode=0
+_dl_map_segments  mappref 0 7f750033c000
+is_share_malloc_inited 7ffff7fa74a0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libsystemd.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa74a0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libpthread.so.0 mode=0
+_dl_map_segments  mappref 0 7f7500404000
+is_share_malloc_inited 7ffff7fa79c0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libpthread.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa79c0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa79c0
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7fa7a30
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libbsd.so.0 mode=0
+_dl_map_segments  mappref 0 7f750040a000
+is_share_malloc_inited 7ffff7fa7f80
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libbsd.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa7f80
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libsodium.so.23 mode=0
+_dl_map_segments  mappref 0 7f7500423000
+is_share_malloc_inited 7ffff7fa44f0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libsodium.so.23 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa44f0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libpgm-5.3.so.0 mode=0
+_dl_map_segments  mappref 0 7f750047c000
+is_share_malloc_inited 7ffff7fa4a10
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libpgm-5.3.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa4a10
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libnorm.so.1 mode=0
+_dl_map_segments  mappref 0 7f75004ce000
+is_share_malloc_inited 7ffff7fa4f30
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libnorm.so.1 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa4f30
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgssapi_krb5.so.2 mode=0
+_dl_map_segments  mappref 0 7f75005fa000
+is_share_malloc_inited 7ffff7fa5450
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgssapi_krb5.so.2 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa5450
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libstdc++.so.6 mode=0
+_dl_map_segments  mappref 0 7f750064f000
+is_share_malloc_inited 7ffff7fa5970
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libstdc++.so.6 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa5970
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa5970
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgcc_s.so.1 mode=0
+_dl_map_segments  mappref 0 7f750087a000
+is_share_malloc_inited 7ffff7fa5e90
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcc_s.so.1 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa5e90
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa5f30
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7fa5f30
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=liblzma.so.5 mode=0
+_dl_map_segments  mappref 0 7f750089b000
+is_share_malloc_inited 7ffff7fa24f0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/liblzma.so.5 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa24f0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libzstd.so.1 mode=0
+_dl_map_segments  mappref 0 7f75008c7000
+is_share_malloc_inited 7ffff7fa2a10
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libzstd.so.1 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa2a10
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=liblz4.so.1 mode=0
+_dl_map_segments  mappref 0 7f7500997000
+is_share_malloc_inited 7ffff7fa2f30
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/liblz4.so.1 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa2f30
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libcap.so.2 mode=0
+_dl_map_segments  mappref 0 7f75009b8000
+is_share_malloc_inited 7ffff7fa3450
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libcap.so.2 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa3450
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgcrypt.so.20 mode=0
+_dl_map_segments  mappref 0 7f75009c4000
+is_share_malloc_inited 7ffff7fa3970
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcrypt.so.20 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa3970
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa3970
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7fa3970
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa3a00
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libmd.so.0 mode=0
+_dl_map_segments  mappref 0 7f7500b03000
+is_share_malloc_inited 7ffff7fa3f50
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libmd.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa3f50
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa3f50
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa3f90
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7fa3f90
+_dl_map_object nsid=0
+match libpthread.so.0 /lib/x86_64-linux-gnu/libpthread.so.0
+is_share_malloc_inited 7ffff7fa3fd0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libm.so.6 mode=0
+_dl_map_segments  mappref 0 7f7500b11000
+is_share_malloc_inited 7ffff7fa04e0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libm.so.6 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa04e0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa04e0
+_dl_map_object nsid=0
+match libpthread.so.0 /lib/x86_64-linux-gnu/libpthread.so.0
+is_share_malloc_inited 7ffff7fa0530
+_dl_map_object nsid=0
+match libstdc++.so.6 /lib/x86_64-linux-gnu/libstdc++.so.6
+is_share_malloc_inited 7ffff7fa0530
+_dl_map_object nsid=0
+match libm.so.6 /lib/x86_64-linux-gnu/libm.so.6
+is_share_malloc_inited 7ffff7fa0530
+_dl_map_object nsid=0
+match libgcc_s.so.1 /lib/x86_64-linux-gnu/libgcc_s.so.1
+is_share_malloc_inited 7ffff7fa0530
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa0530
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libkrb5.so.3 mode=0
+_dl_map_segments  mappref 0 7f7500bf9000
+is_share_malloc_inited 7ffff7fa0ac0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkrb5.so.3 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa0ac0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libk5crypto.so.3 mode=0
+_dl_map_segments  mappref 0 7f7500cc5000
+is_share_malloc_inited 7ffff7fa0fe0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libk5crypto.so.3 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa0fe0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libcom_err.so.2 mode=0
+_dl_map_segments  mappref 0 7f7500cf5000
+is_share_malloc_inited 7ffff7fa1500
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libcom_err.so.2 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa1500
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libkrb5support.so.0 mode=0
+_dl_map_segments  mappref 0 7f7500cfc000
+is_share_malloc_inited 7ffff7fa1a20
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkrb5support.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7fa1a20
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1a20
+_dl_map_object nsid=0
+match libm.so.6 /lib/x86_64-linux-gnu/libm.so.6
+is_share_malloc_inited 7ffff7fa1a90
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1a90
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7fa1a90
+_dl_map_object nsid=0
+match libgcc_s.so.1 /lib/x86_64-linux-gnu/libgcc_s.so.1
+is_share_malloc_inited 7ffff7fa1a90
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1af0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1b20
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1b50
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1b80
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7fa1bb0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libgpg-error.so.0 mode=0
+_dl_map_segments  mappref 0 7f7500d0b000
+is_share_malloc_inited 7ffff7f9e4f0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgpg-error.so.0 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7f9e4f0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9e4f0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9e530
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9e560
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7f9e560
+_dl_map_object nsid=0
+match libk5crypto.so.3 /lib/x86_64-linux-gnu/libk5crypto.so.3
+is_share_malloc_inited 7ffff7f9e5a0
+_dl_map_object nsid=0
+match libcom_err.so.2 /lib/x86_64-linux-gnu/libcom_err.so.2
+is_share_malloc_inited 7ffff7f9e5a0
+_dl_map_object nsid=0
+match libkrb5support.so.0 /lib/x86_64-linux-gnu/libkrb5support.so.0
+is_share_malloc_inited 7ffff7f9e5a0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libkeyutils.so.1 mode=0
+_dl_map_segments  mappref 0 7f7500d32000
+is_share_malloc_inited 7ffff7f9eac0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libkeyutils.so.1 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7f9eac0
+_dl_map_object nsid=0
+_dl_map_object_from_fd name=libresolv.so.2 mode=0
+_dl_map_segments  mappref 0 7f7500d3a000
+is_share_malloc_inited 7ffff7f9efe0
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libresolv.so.2 0
+_dl_map_object_from_fd finished
+is_share_malloc_inited 7ffff7f9efe0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9efe0
+_dl_map_object nsid=0
+match libkrb5support.so.0 /lib/x86_64-linux-gnu/libkrb5support.so.0
+is_share_malloc_inited 7ffff7f9f060
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9f060
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9f0a0
+_dl_map_object nsid=0
+match ld-linux-x86-64.so.2 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/elf/ld-linux-x86-64.so.2
+is_share_malloc_inited 7ffff7f9f0a0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9f0e0
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9f110
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9f140
+_dl_map_object nsid=0
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+is_share_malloc_inited 7ffff7f9f170
+is_share_malloc_inited 7ffff7f985f0
+is_share_malloc_inited 7ffff7f99170
+is_share_malloc_inited 7ffff7f99170
+is_share_malloc_inited 7ffff7f95fe0
+is_share_malloc_inited 7ffff7f95fe0
+is_share_malloc_inited 7ffff7f95fe0
+is_share_malloc_inited 7ffff7f95fe0
+_dl_open 7ffff7fbd550 nsid= fffffffffffffffe nsid == LM_ID_NEWLM 0
+_dl_open 7ffff7fbd550 nsid= fffffffffffffffe nsid == LM_ID_NEWLM 0
+dl_open_worker  nsid= fffffffffffffffe
+dl_open_worker_begin 80000002 
+dl_open_worker_begin  nsid= 0
+_dl_map_object nsid=0
+_dl_get_new_namespace nsid= 1 dl_nss 1
+_dl_get_new_namespace nsid= 1 dl_nss 2
+_dl_open 7ffff7fbd550 nsid= 1 nsid == LM_ID_NEWLM 0
+_dl_open 7ffff7fbd550 nsid= 1 nsid == LM_ID_NEWLM 0
+dl_open_worker  nsid= 1
+dl_open_worker_begin  nsid= 1
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=./libsharetest.so mode=90000002
+_dl_map_segments  mappref 0 600000003000
+is_share_malloc_inited 6000000088c0
+record_loaded_so_after_load_map_info ./libsharetest.so 6000000023e0 0 600000001000
+_dl_map_object_from_fd _dl_add_to_namespace_list ./libsharetest.so 1
+_dl_map_object_from_fd finished
+3.2 _dl_map_object ./libsharetest.so, new addr 6000000023e0 
+record_loaded_so_info ./libsharetest.so 6000000023e0 
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libstdc++.so.6 mode=80000000
+_dl_map_segments  mappref 0 60000000a000
+record_loaded_so_after_load_map_info /lib/x86_64-linux-gnu/libstdc++.so.6 600000008e00 6000000088c0 600000001000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libstdc++.so.6 1
+_dl_map_object_from_fd finished
+record_loaded_so_info /lib/x86_64-linux-gnu/libstdc++.so.6 600000008e00 
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libc.so.6 mode=80000000
+_dl_map_segments  mappref 0 600000235000
+record_loaded_so_after_load_map_info /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 600000234880 600000234300 600000001000
+_dl_map_object_from_fd _dl_add_to_namespace_list /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 1
+_dl_map_object_from_fd finished
+record_loaded_so_info /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 600000234880 
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=ld-linux-x86-64.so.2 mode=80000000
+record_loaded_so_info /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 600000439340 
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libm.so.6 mode=80000000
+_dl_map_segments  mappref 0 60000043a000
+record_loaded_so_after_load_map_info /lib/x86_64-linux-gnu/libm.so.6 600000439920 600000439850 600000001000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libm.so.6 1
+_dl_map_object_from_fd finished
+record_loaded_so_info /lib/x86_64-linux-gnu/libm.so.6 600000439920 
+_dl_map_object nsid=1
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+record_loaded_so_info /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 600000234880 
+_dl_map_object nsid=1
+match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+record_loaded_so_info /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 600000439340 
+_dl_map_object nsid=1
+_dl_map_object_from_fd name=libgcc_s.so.1 mode=80000000
+_dl_map_segments  mappref 0 600000523000
+record_loaded_so_after_load_map_info /lib/x86_64-linux-gnu/libgcc_s.so.1 600000522370 600000521e20 600000001000
+_dl_map_object_from_fd _dl_add_to_namespace_list /lib/x86_64-linux-gnu/libgcc_s.so.1 1
+_dl_map_object_from_fd finished
+record_loaded_so_info /lib/x86_64-linux-gnu/libgcc_s.so.1 600000522370 
+_dl_map_object nsid=1
+match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+record_loaded_so_info /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 600000439340 
+_dl_map_object nsid=1
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+record_loaded_so_info /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 600000234880 
+_dl_map_object nsid=1
+match ld-linux-x86-64.so.2 /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+record_loaded_so_info /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 600000439340 
+_dl_map_object nsid=1
+match libc.so.6 /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6
+record_loaded_so_info /home/yuzishu/Desktop/share_exp/ShareSoftState/glibc-2.35/build/libc.so.6 600000234880 
+record_lts_modid_info /lib/x86_64-linux-gnu/libstdc++.so.6 60000022ce80 8
+record_lts_modid_info /lib/x86_64-linux-gnu/libstdc++.so.6 60000022d100 8
+record_lts_modid_info /lib/x86_64-linux-gnu/libstdc++.so.6 60000022d760 8
+record_lts_modid_info ./libsharetest.so 600000006fe8 7
