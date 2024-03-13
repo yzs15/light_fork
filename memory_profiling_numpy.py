@@ -26,6 +26,10 @@ def read_memory_info(pid):
 
 import os
 import numpy
+import lightfork
+
+lightfork.set_mem_file_name("numpy.mem")
+
 f_pid = os.getpid()
 print("numpy parent mem",get_peak_physical_memory_usage(f_pid), read_memory_info(f_pid))
 
@@ -41,6 +45,7 @@ if pid == 0:
     b = numpy.random.randn(128,128)
     c = numpy.matmul(a,b)
     util.log("numpy real needs",get_peak_physical_memory_usage(c_pid))
+    lightfork.remove_mem_file()
 else:
 
     a = numpy.random.randn(128,128)

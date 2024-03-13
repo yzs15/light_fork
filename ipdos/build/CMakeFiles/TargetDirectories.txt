@@ -1,5 +1,3 @@
 /home/yuzishu/light_fork/ipdos/build/CMakeFiles/ipdos.dir
-/home/yuzishu/light_fork/ipdos/build/CMakeFiles/ipdos_manager_run.dir
-/home/yuzishu/light_fork/ipdos/build/CMakeFiles/ipdos_util_test.dir
 /home/yuzishu/light_fork/ipdos/build/CMakeFiles/edit_cache.dir
 /home/yuzishu/light_fork/ipdos/build/CMakeFiles/rebuild_cache.dir

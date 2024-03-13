@@ -64,8 +64,6 @@ CMAKE_BINARY_DIR = /home/yuzishu/light_fork/ipdos/build
 
 # The main recursive "all" target.
 all: CMakeFiles/ipdos.dir/all
-all: CMakeFiles/ipdos_manager_run.dir/all
-all: CMakeFiles/ipdos_util_test.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +72,6 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ipdos.dir/clean
-clean: CMakeFiles/ipdos_manager_run.dir/clean
-clean: CMakeFiles/ipdos_util_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,12 +81,12 @@ clean: CMakeFiles/ipdos_util_test.dir/clean
 CMakeFiles/ipdos.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ipdos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ipdos"
 .PHONY : CMakeFiles/ipdos.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ipdos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ipdos.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 0
 .PHONY : CMakeFiles/ipdos.dir/rule
@@ -103,58 +99,6 @@ ipdos: CMakeFiles/ipdos.dir/rule
 CMakeFiles/ipdos.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/clean
 .PHONY : CMakeFiles/ipdos.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ipdos_manager_run.dir
-
-# All Build rule for target.
-CMakeFiles/ipdos_manager_run.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=9,10,11 "Built target ipdos_manager_run"
-.PHONY : CMakeFiles/ipdos_manager_run.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ipdos_manager_run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ipdos_manager_run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 0
-.PHONY : CMakeFiles/ipdos_manager_run.dir/rule
-
-# Convenience name for target.
-ipdos_manager_run: CMakeFiles/ipdos_manager_run.dir/rule
-.PHONY : ipdos_manager_run
-
-# clean rule for target.
-CMakeFiles/ipdos_manager_run.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/clean
-.PHONY : CMakeFiles/ipdos_manager_run.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ipdos_util_test.dir
-
-# All Build rule for target.
-CMakeFiles/ipdos_util_test.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=12,13,14 "Built target ipdos_util_test"
-.PHONY : CMakeFiles/ipdos_util_test.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ipdos_util_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ipdos_util_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuzishu/light_fork/ipdos/build/CMakeFiles 0
-.PHONY : CMakeFiles/ipdos_util_test.dir/rule
-
-# Convenience name for target.
-ipdos_util_test: CMakeFiles/ipdos_util_test.dir/rule
-.PHONY : ipdos_util_test
-
-# clean rule for target.
-CMakeFiles/ipdos_util_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/clean
-.PHONY : CMakeFiles/ipdos_util_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

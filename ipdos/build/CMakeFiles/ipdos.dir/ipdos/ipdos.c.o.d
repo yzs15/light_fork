@@ -3,7 +3,6 @@ CMakeFiles/ipdos.dir/ipdos/ipdos.c.o: \
  /home/yuzishu/light_fork/ipdos/./ipdos/ipdos.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /home/yuzishu/light_fork/ipdos/./ipdos/ipdos_client.h \
  /home/yuzishu/light_fork/ipdos/./ipdos_util/info_util.h \
  /home/yuzishu/light_fork/ipdos/./ipdos_util/hashmap.h \
  /usr/include/stdlib.h \
@@ -63,7 +62,6 @@ CMakeFiles/ipdos.dir/ipdos/ipdos.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /home/yuzishu/light_fork/ipdos/./ipdos_util/debug.h \
  /home/yuzishu/light_fork/ipdos/./ipdos_util/common_util.h \
- /home/yuzishu/light_fork/ipdos/./ipdos/pthread_proxy.h \
  /home/yuzishu/light_fork/ipdos/ipdos/sharemalloc_dlmalloc.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \

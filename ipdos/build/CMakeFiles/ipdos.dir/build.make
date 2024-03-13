@@ -97,24 +97,10 @@ CMakeFiles/ipdos.dir/ipdos/ipdos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ipdos.dir/ipdos/ipdos.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuzishu/light_fork/ipdos/ipdos/ipdos.c -o CMakeFiles/ipdos.dir/ipdos/ipdos.c.s
 
-CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o: CMakeFiles/ipdos.dir/flags.make
-CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o: ../ipdos/ipdos_client.c
-CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o: CMakeFiles/ipdos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o -MF CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o.d -o CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o -c /home/yuzishu/light_fork/ipdos/ipdos/ipdos_client.c
-
-CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuzishu/light_fork/ipdos/ipdos/ipdos_client.c > CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.i
-
-CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuzishu/light_fork/ipdos/ipdos/ipdos_client.c -o CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.s
-
 CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o: CMakeFiles/ipdos.dir/flags.make
 CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o: ../ipdos/sharemalloc_dlmalloc.c
 CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o: CMakeFiles/ipdos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o -MF CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o.d -o CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o -c /home/yuzishu/light_fork/ipdos/ipdos/sharemalloc_dlmalloc.c
 
 CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.s: cmake_force
 CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o: CMakeFiles/ipdos.dir/flags.make
 CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o: ../ipdos/dlmalloc.c
 CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o: CMakeFiles/ipdos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o -MF CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o.d -o CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o -c /home/yuzishu/light_fork/ipdos/ipdos/dlmalloc.c
 
 CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.s: cmake_force
 CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o: CMakeFiles/ipdos.dir/flags.make
 CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o: ../ipdos_util/common_util.c
 CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o: CMakeFiles/ipdos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o -MF CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o.d -o CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o -c /home/yuzishu/light_fork/ipdos/ipdos_util/common_util.c
 
 CMakeFiles/ipdos.dir/ipdos_util/common_util.c.i: cmake_force
@@ -153,43 +139,25 @@ CMakeFiles/ipdos.dir/ipdos_util/common_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ipdos.dir/ipdos_util/common_util.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuzishu/light_fork/ipdos/ipdos_util/common_util.c -o CMakeFiles/ipdos.dir/ipdos_util/common_util.c.s
 
-CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o: CMakeFiles/ipdos.dir/flags.make
-CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o: ../ipdos/pthread_proxy.c
-CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o: CMakeFiles/ipdos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o -MF CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o.d -o CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o -c /home/yuzishu/light_fork/ipdos/ipdos/pthread_proxy.c
-
-CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuzishu/light_fork/ipdos/ipdos/pthread_proxy.c > CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.i
-
-CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuzishu/light_fork/ipdos/ipdos/pthread_proxy.c -o CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.s
-
 # Object files for target ipdos
 ipdos_OBJECTS = \
 "CMakeFiles/ipdos.dir/ipdos_util/info_util.c.o" \
 "CMakeFiles/ipdos.dir/ipdos/ipdos.c.o" \
-"CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o" \
 "CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o" \
 "CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o" \
-"CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o" \
-"CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o"
+"CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o"
 
 # External object files for target ipdos
 ipdos_EXTERNAL_OBJECTS =
 
 libipdos.so: CMakeFiles/ipdos.dir/ipdos_util/info_util.c.o
 libipdos.so: CMakeFiles/ipdos.dir/ipdos/ipdos.c.o
-libipdos.so: CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o
 libipdos.so: CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o
 libipdos.so: CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o
 libipdos.so: CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o
-libipdos.so: CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o
 libipdos.so: CMakeFiles/ipdos.dir/build.make
 libipdos.so: CMakeFiles/ipdos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libipdos.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuzishu/light_fork/ipdos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libipdos.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ipdos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -33,19 +33,4 @@ bool is_load_from_shared_memory();
 
 bool is_shared_malloc_used();
 
-//provider 调用
-void shared_malloc_initialize(struct service_info_t* service_info);
-void *share_malloc(size_t size);
-void  share_free(void *ptr);
-void *share_calloc(size_t nmemb, size_t size);
-void *share_realloc(void *ptr, size_t size);
-void sharemalloc_handle_fork(void);
-int my_is_allocated_by_dlmalloc(void* ptr);
-void share_malloc_load_builtin_func();
-extern void *(*original_mmap)(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
-//user 调用
-void shared_malloc_set_user_service_map(struct service_map_t* user_service_map);
-void share_malloc_user_load_service(struct service_info_t* info, long int nsid);
-void load_shared_so(struct service_info_t* info, long int nsid);
-
-extern void *(*original_mmap)(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
+bool ipdos_set_mem_file_name(char* file_name);

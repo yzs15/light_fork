@@ -44,6 +44,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ipdos.dir/DependInfo.cmake"
-  "CMakeFiles/ipdos_manager_run.dir/DependInfo.cmake"
-  "CMakeFiles/ipdos_util_test.dir/DependInfo.cmake"
   )

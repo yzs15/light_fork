@@ -129,32 +129,6 @@ ipdos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/build
 .PHONY : ipdos/fast
 
-#=============================================================================
-# Target rules for targets named ipdos_manager_run
-
-# Build rule for target.
-ipdos_manager_run: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipdos_manager_run
-.PHONY : ipdos_manager_run
-
-# fast build rule for target.
-ipdos_manager_run/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/build
-.PHONY : ipdos_manager_run/fast
-
-#=============================================================================
-# Target rules for targets named ipdos_util_test
-
-# Build rule for target.
-ipdos_util_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipdos_util_test
-.PHONY : ipdos_util_test
-
-# fast build rule for target.
-ipdos_util_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/build
-.PHONY : ipdos_util_test/fast
-
 ipdos/dlmalloc.o: ipdos/dlmalloc.c.o
 .PHONY : ipdos/dlmalloc.o
 
@@ -203,54 +177,6 @@ ipdos/ipdos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/ipdos.c.s
 .PHONY : ipdos/ipdos.c.s
 
-ipdos/ipdos_client.o: ipdos/ipdos_client.c.o
-.PHONY : ipdos/ipdos_client.o
-
-# target to build an object file
-ipdos/ipdos_client.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o
-.PHONY : ipdos/ipdos_client.c.o
-
-ipdos/ipdos_client.i: ipdos/ipdos_client.c.i
-.PHONY : ipdos/ipdos_client.i
-
-# target to preprocess a source file
-ipdos/ipdos_client.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.i
-.PHONY : ipdos/ipdos_client.c.i
-
-ipdos/ipdos_client.s: ipdos/ipdos_client.c.s
-.PHONY : ipdos/ipdos_client.s
-
-# target to generate assembly for a file
-ipdos/ipdos_client.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.s
-.PHONY : ipdos/ipdos_client.c.s
-
-ipdos/pthread_proxy.o: ipdos/pthread_proxy.c.o
-.PHONY : ipdos/pthread_proxy.o
-
-# target to build an object file
-ipdos/pthread_proxy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o
-.PHONY : ipdos/pthread_proxy.c.o
-
-ipdos/pthread_proxy.i: ipdos/pthread_proxy.c.i
-.PHONY : ipdos/pthread_proxy.i
-
-# target to preprocess a source file
-ipdos/pthread_proxy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.i
-.PHONY : ipdos/pthread_proxy.c.i
-
-ipdos/pthread_proxy.s: ipdos/pthread_proxy.c.s
-.PHONY : ipdos/pthread_proxy.s
-
-# target to generate assembly for a file
-ipdos/pthread_proxy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.s
-.PHONY : ipdos/pthread_proxy.c.s
-
 ipdos/sharemalloc_dlmalloc.o: ipdos/sharemalloc_dlmalloc.c.o
 .PHONY : ipdos/sharemalloc_dlmalloc.o
 
@@ -274,30 +200,6 @@ ipdos/sharemalloc_dlmalloc.s: ipdos/sharemalloc_dlmalloc.c.s
 ipdos/sharemalloc_dlmalloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.s
 .PHONY : ipdos/sharemalloc_dlmalloc.c.s
-
-ipdos_manager/main.o: ipdos_manager/main.c.o
-.PHONY : ipdos_manager/main.o
-
-# target to build an object file
-ipdos_manager/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/ipdos_manager/main.c.o
-.PHONY : ipdos_manager/main.c.o
-
-ipdos_manager/main.i: ipdos_manager/main.c.i
-.PHONY : ipdos_manager/main.i
-
-# target to preprocess a source file
-ipdos_manager/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/ipdos_manager/main.c.i
-.PHONY : ipdos_manager/main.c.i
-
-ipdos_manager/main.s: ipdos_manager/main.c.s
-.PHONY : ipdos_manager/main.s
-
-# target to generate assembly for a file
-ipdos_manager/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/ipdos_manager/main.c.s
-.PHONY : ipdos_manager/main.c.s
 
 ipdos_util/common_util.o: ipdos_util/common_util.c.o
 .PHONY : ipdos_util/common_util.o
@@ -329,8 +231,6 @@ ipdos_util/info_util.o: ipdos_util/info_util.c.o
 # target to build an object file
 ipdos_util/info_util.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos_util/info_util.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/ipdos_util/info_util.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/ipdos_util/info_util.c.o
 .PHONY : ipdos_util/info_util.c.o
 
 ipdos_util/info_util.i: ipdos_util/info_util.c.i
@@ -339,8 +239,6 @@ ipdos_util/info_util.i: ipdos_util/info_util.c.i
 # target to preprocess a source file
 ipdos_util/info_util.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos_util/info_util.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/ipdos_util/info_util.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/ipdos_util/info_util.c.i
 .PHONY : ipdos_util/info_util.c.i
 
 ipdos_util/info_util.s: ipdos_util/info_util.c.s
@@ -349,33 +247,7 @@ ipdos_util/info_util.s: ipdos_util/info_util.c.s
 # target to generate assembly for a file
 ipdos_util/info_util.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos.dir/build.make CMakeFiles/ipdos.dir/ipdos_util/info_util.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_manager_run.dir/build.make CMakeFiles/ipdos_manager_run.dir/ipdos_util/info_util.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/ipdos_util/info_util.c.s
 .PHONY : ipdos_util/info_util.c.s
-
-ipdos_util/test_info_util.o: ipdos_util/test_info_util.c.o
-.PHONY : ipdos_util/test_info_util.o
-
-# target to build an object file
-ipdos_util/test_info_util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/ipdos_util/test_info_util.c.o
-.PHONY : ipdos_util/test_info_util.c.o
-
-ipdos_util/test_info_util.i: ipdos_util/test_info_util.c.i
-.PHONY : ipdos_util/test_info_util.i
-
-# target to preprocess a source file
-ipdos_util/test_info_util.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/ipdos_util/test_info_util.c.i
-.PHONY : ipdos_util/test_info_util.c.i
-
-ipdos_util/test_info_util.s: ipdos_util/test_info_util.c.s
-.PHONY : ipdos_util/test_info_util.s
-
-# target to generate assembly for a file
-ipdos_util/test_info_util.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipdos_util_test.dir/build.make CMakeFiles/ipdos_util_test.dir/ipdos_util/test_info_util.c.s
-.PHONY : ipdos_util/test_info_util.c.s
 
 # Help Target
 help:
@@ -386,35 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ipdos"
-	@echo "... ipdos_manager_run"
-	@echo "... ipdos_util_test"
 	@echo "... ipdos/dlmalloc.o"
 	@echo "... ipdos/dlmalloc.i"
 	@echo "... ipdos/dlmalloc.s"
 	@echo "... ipdos/ipdos.o"
 	@echo "... ipdos/ipdos.i"
 	@echo "... ipdos/ipdos.s"
-	@echo "... ipdos/ipdos_client.o"
-	@echo "... ipdos/ipdos_client.i"
-	@echo "... ipdos/ipdos_client.s"
-	@echo "... ipdos/pthread_proxy.o"
-	@echo "... ipdos/pthread_proxy.i"
-	@echo "... ipdos/pthread_proxy.s"
 	@echo "... ipdos/sharemalloc_dlmalloc.o"
 	@echo "... ipdos/sharemalloc_dlmalloc.i"
 	@echo "... ipdos/sharemalloc_dlmalloc.s"
-	@echo "... ipdos_manager/main.o"
-	@echo "... ipdos_manager/main.i"
-	@echo "... ipdos_manager/main.s"
 	@echo "... ipdos_util/common_util.o"
 	@echo "... ipdos_util/common_util.i"
 	@echo "... ipdos_util/common_util.s"
 	@echo "... ipdos_util/info_util.o"
 	@echo "... ipdos_util/info_util.i"
 	@echo "... ipdos_util/info_util.s"
-	@echo "... ipdos_util/test_info_util.o"
-	@echo "... ipdos_util/test_info_util.i"
-	@echo "... ipdos_util/test_info_util.s"
 .PHONY : help
 
 

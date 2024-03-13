@@ -10,8 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yuzishu/light_fork/ipdos/ipdos/dlmalloc.c" "CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos/dlmalloc.c.o.d"
   "/home/yuzishu/light_fork/ipdos/ipdos/ipdos.c" "CMakeFiles/ipdos.dir/ipdos/ipdos.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos/ipdos.c.o.d"
-  "/home/yuzishu/light_fork/ipdos/ipdos/ipdos_client.c" "CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos/ipdos_client.c.o.d"
-  "/home/yuzishu/light_fork/ipdos/ipdos/pthread_proxy.c" "CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos/pthread_proxy.c.o.d"
   "/home/yuzishu/light_fork/ipdos/ipdos/sharemalloc_dlmalloc.c" "CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos/sharemalloc_dlmalloc.c.o.d"
   "/home/yuzishu/light_fork/ipdos/ipdos_util/common_util.c" "CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos_util/common_util.c.o.d"
   "/home/yuzishu/light_fork/ipdos/ipdos_util/info_util.c" "CMakeFiles/ipdos.dir/ipdos_util/info_util.c.o" "gcc" "CMakeFiles/ipdos.dir/ipdos_util/info_util.c.o.d"

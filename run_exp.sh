@@ -4,21 +4,25 @@ export PYTHONMALLOC=malloc
 ulimit -c unlimited
 echo "type, peakMemory(Bytes)" > log.csv
 
+cd ipdos/build && bash build.sh
+cd ../../
 
+cd light_fork && bash build.sh
+cd ../
 
-LD_PRELOAD=./libipdos.so python3 memory_profiling_pytorch.py optimized
-sleep 5
-pkill -1 -f "python3 memory_profiling_pytorch.py"
-python3 memory_profiling_pytorch.py forked
-sleep 5
-pkill -1 -f "python3 memory_profiling_pytorch.py"
+# LD_PRELOAD=./libipdos.so python3 memory_profiling_pytorch.py optimized
+# sleep 5
+# pkill -1 -f "python3 memory_profiling_pytorch.py"
+# python3 memory_profiling_pytorch.py forked
+# sleep 5
+# pkill -1 -f "python3 memory_profiling_pytorch.py"
 # sleep 5
 # python3 memory_profiling_pytorch.py forked
 # sleep 5
 
 
-# LD_PRELOAD=./libipdos.so python3 memory_profiling_numpy.py optimized
-# sleep 5
+LD_PRELOAD=./libipdos.so python3 memory_profiling_numpy.py optimized
+sleep 5
 # python3 memory_profiling_numpy.py forked
 # sleep 5
 
