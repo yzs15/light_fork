@@ -1,3 +1,5 @@
 type, peakMemory(Bytes)
 optimized numpy original,33536
 optimized numpy real needs,14140
+optimized numpy original,32384
+optimized numpy real needs,19196

@@ -200,7 +200,7 @@ static void * share_malloc_provier_alloc_memory(unsigned long start_addr, size_t
         return NULL;
     }
     void *baseaddr = (void *)(intptr_t)(start_addr+shared_memory_alloc_size);
-    // printf("baseaddr %p\n", baseaddr);
+    printf("baseaddr %p\n", baseaddr);
     fsync(provider_fd);
     ptr = original_mmap(baseaddr, size, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_SHARED|MAP_FIXED, provider_fd, shared_memory_alloc_size);
     if (ptr == MAP_FAILED) {

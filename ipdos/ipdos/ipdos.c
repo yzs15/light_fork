@@ -20,13 +20,6 @@
 */
 
 
-#define MAP_ANONYMOUS 0x20
-char* IPDOS_MANAGER_ADDR = NULL;
-// #define IPDOS_MANAGER_ADDR "tcp://127.0.0.1:5555"
-// #define IPDOS_MANAGER_ADDR "tcp://ipdos.domain:5555"
-#define SHARE_FILE_FOLDER "/home/yuzishu/share_folder/"
-// #define SHARE_FILE_FOLDER "/dev/shm/lass_ict/"
-#define IPDOS_MANAGER_LOG_PATH "/dev/shm/lass_ict/ipdos_manager_log"
 void ipdos_init() __attribute__((constructor));
 
 
@@ -47,9 +40,11 @@ bool ipdos_inited = false;
 //初始化：mmap占用SHARE_MEM_FIX_ADDR_BASE ~ SHARE_MEM_FIX_ADDR_TOP的虚拟地址空间
 void ipdos_init(){
     share_malloc_load_builtin_func();
-   
-    void* baseaddr = (void*)(uintptr_t)SHARE_MEM_FIX_ADDR_BASE;
-    void* addr = mmap(baseaddr, SHARE_MEM_FIX_ADDR_SIZE, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1,0);
+    void* baseaddr = mmap(NULL, SHARE_MEM_FIX_ADDR_SIZE, PROT_READ, MAP_PRIVATE|MAP_ANONYMOUS, -1,0);
+    if (baseaddr == MAP_FAILED) {
+        printf("ipdos_init mmap failed\n");
+        return;
+    }
     provider_service_info = malloc(sizeof(struct service_info_t));
     provider_service_info->start_virtual_addr = (uintptr_t)baseaddr;
     provider_service_info->end_virtual_addr = (uintptr_t)baseaddr + 1024*1024*1024;
@@ -61,7 +56,6 @@ void ipdos_init(){
     char* fileName = malloc(FILE_NAME_SIZE);
     snprintf(fileName, FILE_NAME_SIZE, "/dev/shm/memory_file_%ld", get_time_us());
     provider_service_info->shared_state_file_path = fileName;
-
     shared_malloc_initialize(provider_service_info);
    
 

@@ -46,6 +46,8 @@ if pid == 0:
     c = numpy.matmul(a,b)
     util.log("numpy real needs",get_peak_physical_memory_usage(c_pid))
     lightfork.remove_mem_file()
+
+    # start http server
 else:
 
     a = numpy.random.randn(128,128)
