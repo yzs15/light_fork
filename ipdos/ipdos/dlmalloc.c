@@ -220,7 +220,7 @@ extern void * share_malloc_provier_alloc_memory_with_default_addr( size_t size);
 #ifndef WIN32
 // #define MUNMAP_DEFAULT(a, s)  munmap((a), (s))
 extern int (*original_munmap)(void *addr, size_t length);
-#define MUNMAP_DEFAULT(a, s)  original_munmap((a), (s))
+#define MUNMAP_DEFAULT(a, s)  munmap((a), (s))
 #define MMAP_PROT            (PROT_READ|PROT_WRITE)
 #if !defined(MAP_ANONYMOUS) && defined(MAP_ANON)
 #define MAP_ANONYMOUS        MAP_ANON
@@ -237,9 +237,9 @@ extern int (*original_munmap)(void *addr, size_t length);
 #define MMAP_FLAGS           (MAP_PRIVATE)
 static int dev_zero_fd = -1; /* Cached file descriptor for /dev/zero. */
 // #define MMAP_DEFAULT(s) ((dev_zero_fd < 0) ? \
-//            (dev_zero_fd = open("/dev/zero", O_RDWR), \
-//             mmap(0, (s), MMAP_PROT, MMAP_FLAGS, dev_zero_fd, 0)) : \
-//             mmap(0, (s), MMAP_PROT, MMAP_FLAGS, dev_zero_fd, 0))
+//             (dev_zero_fd = open("/dev/zero", O_RDWR), \
+//              mmap(0, (s), MMAP_PROT, MMAP_FLAGS, dev_zero_fd, 0)) : \
+//              mmap(0, (s), MMAP_PROT, MMAP_FLAGS, dev_zero_fd, 0))
 #define MMAP_DEFAULT(s)  share_malloc_provier_alloc_memory_with_default_addr(s)
 #endif /* MAP_ANONYMOUS */
 
@@ -286,7 +286,10 @@ static FORCEINLINE int win32munmap(void* ptr, size_t size) {
 
 #if HAVE_MREMAP
 #ifndef WIN32
-#define MREMAP_DEFAULT(addr, osz, nsz, mv) mremap((addr), (osz), (nsz), (mv))
+// #define MREMAP_DEFAULT(addr, osz, nsz, mv) mremap((addr), (osz), (nsz), (mv))
+extern void *shared_mremap(void *__addr, size_t old_size, size_t new_size, int flags);
+#define MREMAP_DEFAULT(addr, osz, nsz, mv) shared_mremap((addr), (osz), (nsz), (mv))
+
 #endif /* WIN32 */
 #endif /* HAVE_MREMAP */
 
@@ -340,8 +343,10 @@ static FORCEINLINE int win32munmap(void* ptr, size_t size) {
  */
 #if HAVE_MMAP && HAVE_MREMAP
     #ifdef MREMAP
+        
         #define CALL_MREMAP(addr, osz, nsz, mv) MREMAP((addr), (osz), (nsz), (mv))
     #else /* MREMAP */
+        //  #error "MREMAP  not is defined"
         #define CALL_MREMAP(addr, osz, nsz, mv) MREMAP_DEFAULT((addr), (osz), (nsz), (mv))
     #endif /* MREMAP */
 #else  /* HAVE_MMAP && HAVE_MREMAP */

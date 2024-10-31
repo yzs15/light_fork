@@ -38,9 +38,12 @@ long get_time_us(){
 
 bool ipdos_inited = false;
 //初始化：mmap占用SHARE_MEM_FIX_ADDR_BASE ~ SHARE_MEM_FIX_ADDR_TOP的虚拟地址空间
+extern void *(*original_mmap)(void *addr, size_t length, int prot, int flags, int fd,
+                       off_t offset);
 void ipdos_init(){
     share_malloc_load_builtin_func();
-    void* baseaddr = mmap(NULL, SHARE_MEM_FIX_ADDR_SIZE, PROT_READ, MAP_PRIVATE|MAP_ANONYMOUS, -1,0);
+    original_mmap = dlsym(RTLD_NEXT, "mmap");
+    void* baseaddr = original_mmap(NULL, SHARE_MEM_FIX_ADDR_SIZE, PROT_READ, MAP_PRIVATE|MAP_ANONYMOUS, -1,0);
     if (baseaddr == MAP_FAILED) {
         printf("ipdos_init mmap failed\n");
         return;
@@ -54,7 +57,17 @@ void ipdos_init(){
     provider_service_info->version = "0.0.1";
     provider_service_info->shared_so_nsid = 0;
     char* fileName = malloc(FILE_NAME_SIZE);
-    snprintf(fileName, FILE_NAME_SIZE, "/dev/shm/memory_file_%ld", get_time_us());
+    // snprintf(fileName, FILE_NAME_SIZE, "/dev/shm/memory_file_%ld", get_time_us());
+    
+    //环境变量设置共享内存文件名
+    char* env_file_name = getenv("IPDOS_SHARED_MEM_FILE");
+    if(env_file_name != NULL){
+        snprintf(fileName, FILE_NAME_SIZE, "%s", env_file_name);
+    }else{
+        //error
+        printf("IPDOS_SHARED_MEM_FILE not set\n");
+        exit(1);
+    }
     provider_service_info->shared_state_file_path = fileName;
     shared_malloc_initialize(provider_service_info);
    

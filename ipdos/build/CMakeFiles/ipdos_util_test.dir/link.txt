@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/ipdos_util_test.dir/ipdos_util/test_info_util.c.o CMakeFiles/ipdos_util_test.dir/ipdos_util/info_util.c.o -o ipdos_util_test 

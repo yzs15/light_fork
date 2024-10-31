@@ -27,6 +27,10 @@ def read_memory_info(pid):
 import os
 
 import cv2
+import lightfork
+
+lightfork.set_mem_file_name("cv2.mem")
+
 f_pid = os.getpid()
 # print("parent mem",get_peak_physical_memory_usage(f_pid), read_memory_info(f_pid))
 

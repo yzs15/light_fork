@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/ipdos_manager_run.dir/ipdos_manager/main.c.o CMakeFiles/ipdos_manager_run.dir/ipdos_util/info_util.c.o -o ipdos_manager_run  -lpthread 

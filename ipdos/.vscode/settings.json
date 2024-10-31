@@ -62,6 +62,7 @@
         "dlfcn.h": "c",
         "pthread_proxy.h": "c",
         "common_util.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "assert.h": "c"
     }
 }

@@ -34,3 +34,6 @@ bool is_load_from_shared_memory();
 bool is_shared_malloc_used();
 
 bool ipdos_set_mem_file_name(char* file_name);
+
+void shared_malloc_initialize(struct service_info_t *service_info);
+void share_malloc_load_builtin_func();

@@ -28,7 +28,7 @@ import os
 import numpy
 import lightfork
 
-lightfork.set_mem_file_name("numpy.mem")
+lightfork.set_mem_file_name("numpy2.mem")
 
 f_pid = os.getpid()
 print("numpy parent mem",get_peak_physical_memory_usage(f_pid), read_memory_info(f_pid))

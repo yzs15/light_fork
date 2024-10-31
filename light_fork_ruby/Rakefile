@@ -1,0 +1,16 @@
+require 'rake/extensiontask'
+
+spec = Gem::Specification.new do |s|
+  s.name = "lightfork"
+  s.version = "0.1.0"
+  s.summary = "A lightfork for Ruby."
+  s.authors = ["lrf"]
+  s.platform = Gem::Platform::RUBY
+  s.files = FileList['lib/**/*.rb', 'ext/**/*.c']
+  s.extensions = FileList["ext/**/extconf.rb"]
+end
+
+Gem::PackageTask.new(spec) do |pkg|
+end
+
+Rake::ExtensionTask.new('lightfork', spec)

@@ -8,6 +8,7 @@ typedef void *(*calloc_func_t)(size_t, size_t);
 typedef void *(*realloc_func_t)(void *, size_t);
 typedef void *(*malloc_func_t)(size_t);
 typedef void *(*memalign_func_t)(size_t, size_t);
+
 typedef int (*posix_memalign_func_t)(void **memptr, size_t alignment,
                                      size_t size);
 
@@ -16,6 +17,7 @@ mspace shared_mspace = NULL;
 void *(*original_mmap)(void *addr, size_t length, int prot, int flags, int fd,
                        off_t offset);
 int (*original_munmap)(void *addr, size_t length);
+void *(*original_mremap)(void *__addr, size_t old_size, size_t new_size, int flags, ...);
 size_t (*original_malloc_usable_size)(void *ptr);
 malloc_func_t real_malloc = NULL;
 static pid_t (*real_fork)(void) = NULL;
@@ -79,13 +81,19 @@ void share_malloc_load_builtin_func() {
     real_fork = (pid_t(*)(void))dlsym(RTLD_NEXT, "fork");
     real_free = (free_func_t)dlsym(RTLD_NEXT, "free");
     original_dlopen = dlsym(RTLD_NEXT, "dlopen");
+    original_mremap = dlsym(RTLD_NEXT, "mremap");
     if (pthread_mutex_init(&lock, NULL) != 0) {
         LG("Mutex initialization failed\n");
         return;
     }
 }
 
+char shm_path[4096];
+int ipdos_remove_parent_mem_file() {
+    return remove(shm_path);   
+}
 void share_malloc_provider_init(unsigned long start_addr, char *file_path) {
+    memcpy(shm_path, file_path, strlen(file_path));
     is_provider = true;
     provider_fd =
         open(file_path, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR | S_IXUSR);
@@ -109,6 +117,8 @@ void share_malloc_provider_init(unsigned long start_addr, char *file_path) {
     shared_memory_ptr = original_mmap(baseaddr, SHARE_MALLOC_OFFEST,
                                       PROT_READ | PROT_WRITE | PROT_EXEC,
                                       MAP_SHARED | MAP_FIXED, provider_fd, 0);
+    // share_mmap_list_head = (share_mmap_list_t*)(baseaddr+2048);
+    // share_mmap_list_head->next = NULL;
     if (shared_memory_ptr == MAP_FAILED) {
         LG("mmap %s\n", strerror(errno));
         return;
@@ -131,24 +141,31 @@ bool ipdos_set_mem_file_name(char *file_name) {
     return true;
 }
 
-int ipdos_remove_parent_mem_file() {}
 
 // provider fork之后需要进行特殊处理
 void sharemalloc_handle_fork(void) {
-    if (!is_provider || !is_shared_malloc_used()) {
-        // 说明不会使用从父进程继承的共享内存的share属性
-        printf(
-            "sharemalloc_handle_fork not provider or not use share malloc\n");
+    // if (!is_provider || !is_shared_malloc_used()) {
+    //     // 说明不会使用从父进程继承的共享内存的share属性
+    //     printf(
+    //         "sharemalloc_handle_fork not provider or not use share malloc\n");
+    //     return;
+    // }
+    if (!is_provider) {
+        printf("not provider\n");
         return;
     }
+    // use_share_malloc = false;
+    // use_share_malloc = false;
 
     // printf("%p\n", &is_provider_forked);
+    void *shared_mem =NULL;
     void *baseaddr = shared_memory_ptr;
-    original_munmap(baseaddr, shared_memory_alloc_size);
-    void *shared_mem = original_mmap(baseaddr, shared_memory_alloc_size,
-                                     PROT_READ | PROT_WRITE | PROT_EXEC,
-                                     MAP_PRIVATE | MAP_FIXED, provider_fd, 0);
+    // original_munmap(baseaddr, shared_memory_alloc_size);
+    // void *shared_mem = original_mmap(baseaddr, shared_memory_alloc_size,
+    //                                  PROT_READ | PROT_WRITE ,
+    //                                  MAP_PRIVATE | MAP_FIXED, provider_fd, 0);
     // printf("sharemalloc_handle_fork\n");
+    is_provider = false; // 之后不需要重新处理
     use_share_malloc = false;
     is_provider_forked = true;
     int dest_fd;
@@ -164,6 +181,7 @@ void sharemalloc_handle_fork(void) {
     fsync(provider_fd);
     lseek(provider_fd, 0, SEEK_SET);
 
+    int length = 0;
     // 从fd读取数据并写入到目标文件
     while ((bytes_read = read(provider_fd, buffer, 1024 * 1024)) > 0) {
         if (write(dest_fd, buffer, bytes_read) != bytes_read) {
@@ -171,6 +189,7 @@ void sharemalloc_handle_fork(void) {
             close(dest_fd);
             return;
         }
+        length += bytes_read;
     }
 
     if (bytes_read == -1) {
@@ -180,12 +199,18 @@ void sharemalloc_handle_fork(void) {
     }
     fsync(dest_fd);
     close(dest_fd);
-    dest_fd = open(MemFileName, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR | S_IXUSR);
+    close(provider_fd);
+    dest_fd = open(MemFileName,   O_RDWR, S_IRUSR | S_IWUSR | S_IXUSR);
+    original_munmap(baseaddr, shared_memory_alloc_size);
     shared_mem = original_mmap(baseaddr, shared_memory_alloc_size,
-                               PROT_READ | PROT_WRITE | PROT_EXEC,
+                               PROT_READ | PROT_WRITE ,
                                MAP_PRIVATE | MAP_FIXED, dest_fd, 0);
-    is_provider = false; // 之后不需要重新处理
-    use_share_malloc = false;
+    if (shared_mem == MAP_FAILED) {
+        printf("mmap error\n");
+        return;
+    }
+
+    printf("child forked %d \n", length);    
 }
 
 // provider 申请内存空间
@@ -194,7 +219,7 @@ static void *share_malloc_provier_alloc_memory(unsigned long start_addr,
     LG("shared_memory_alloc() called with size: %zu\n", size);
 
     if (!use_share_malloc) {
-        LG("!use_share_malloc \n");
+        printf("!use_share_malloc \n");
         return NULL;
     }
     void *ptr;
@@ -204,9 +229,9 @@ static void *share_malloc_provier_alloc_memory(unsigned long start_addr,
         return NULL;
     }
     void *baseaddr = (void *)(intptr_t)(start_addr + shared_memory_alloc_size);
-    printf("baseaddr %p\n", baseaddr);
+    // printf("baseaddr %p\n", baseaddr);
     fsync(provider_fd);
-    ptr = original_mmap(baseaddr, size, PROT_READ | PROT_WRITE | PROT_EXEC,
+    ptr = original_mmap(baseaddr, size, PROT_READ | PROT_WRITE,
                         MAP_SHARED | MAP_FIXED, provider_fd,
                         shared_memory_alloc_size);
     if (ptr == MAP_FAILED) {
@@ -236,10 +261,10 @@ int my_is_allocated_by_dlmalloc(void *ptr) {
         return 0;
     }
     // 是user
-    if ((uintptr_t)ptr >= SHARE_MEM_FIX_ADDR_BASE &&
-        (uintptr_t)ptr < SHARE_MEM_FIX_ADDR_TOP) {
-        return 1;
-    }
+    // if ((uintptr_t)ptr >= SHARE_MEM_FIX_ADDR_BASE &&
+    //     (uintptr_t)ptr < SHARE_MEM_FIX_ADDR_TOP) {
+    //     return 1;
+    // }
     return 0;
 }
 //
@@ -263,8 +288,9 @@ void shared_malloc_initialize(struct service_info_t *service_info) {
         pthread_mutex_unlock(&lock);
         return;
     }
-    void **store_addr = (void **)(intptr_t)(start_addr + 1024);
+    // void **store_addr = (void **)(intptr_t)(start_addr + 1024);
     share_malloc_provider_init(start_addr, file_path);
+    is_provider = true;
     init_pid = getpid();
     LG("pid %d\n", init_pid);
     size_t size = 1024 * 1024 * 8; // 16MB
@@ -285,16 +311,16 @@ void shared_malloc_initialize(struct service_info_t *service_info) {
         exit(0);
     }
 
-    shared_mspace = create_mspace_with_base(ptr, size, 0);
-    *store_addr = shared_mspace;
+    shared_mspace = create_mspace_with_base(ptr, size, 1);
+    // *store_addr = shared_mspace;
 
     LG("initialize_shared_malloc at ptr %p %p\n", ptr, shared_mspace);
     share_malloc_initialized = true;
     pthread_mutex_unlock(&lock);
 
-    service_info->ld_so_hared_map_ptr = (void **)(intptr_t)(start_addr + 4096);
+    // service_info->ld_so_hared_map_ptr = (void **)(intptr_t)(start_addr + 4096);
 
-    service_info->pthread_proxy = (void *)(intptr_t)(start_addr + 4096 + 1024);
+    // service_info->pthread_proxy = (void *)(intptr_t)(start_addr + 4096 + 1024);
 }
 
 void *share_malloc(size_t size) {
@@ -309,11 +335,7 @@ void *share_malloc(size_t size) {
 
 void share_free(void *ptr) {
     pthread_mutex_lock(&lock);
-    if (my_is_allocated_by_dlmalloc(ptr)) {
-        mspace_free(shared_mspace, ptr);
-    } else {
-        real_free(ptr);
-    }
+    mspace_free(shared_mspace, ptr);
     pthread_mutex_unlock(&lock);
 }
 static calloc_func_t real_calloc = NULL;
@@ -327,34 +349,18 @@ void *share_calloc(size_t nmemb, size_t size) {
 void share_print_mem_info() { fsync(provider_fd); }
 
 void *share_realloc(void *ptr, size_t size) {
-
-    static realloc_func_t real_realloc_realloc = NULL;
-    if (!real_realloc_realloc) {
-        real_realloc_realloc = (realloc_func_t)dlsym(RTLD_NEXT, "realloc");
-    }
-
     pthread_mutex_lock(&lock);
     if (size == 0) {
         free(ptr);
     }
     void *new_ptr = NULL;
-    if (my_is_allocated_by_dlmalloc(ptr) || ptr == NULL) {
-        new_ptr = mspace_realloc(shared_mspace, ptr, size);
-        pthread_mutex_unlock(&lock);
-    } else {
-        pthread_mutex_unlock(&lock);
-        new_ptr = share_malloc(size);
-
-        void *old_ptr = real_realloc_realloc(ptr, size);
-        memcpy(new_ptr, old_ptr, size);
-        free(old_ptr);
-    }
+    new_ptr = mspace_realloc(shared_mspace, ptr, size);
+    pthread_mutex_unlock(&lock);
     return new_ptr;
 }
 
 long id = 0;
 void free(void *ptr) {
-
     if (my_is_allocated_by_dlmalloc(ptr)) {
         share_free(ptr);
     } else {
@@ -382,8 +388,15 @@ void *realloc(void *ptr, size_t size) {
     }
     bool is_shared_ptr = my_is_allocated_by_dlmalloc(ptr);
     if (is_shared_ptr) {
-        void *new_ptr = share_realloc(ptr, size);
-        return new_ptr;
+        if (use_share_malloc) {
+            void *new_ptr = share_realloc(ptr, size);
+            return new_ptr;
+        }else{
+            void *new_ptr = real_malloc(size);
+            memcpy(new_ptr, ptr, size);
+            share_free(ptr);
+            return new_ptr;
+        }
     } else {
 
         void *new_ptr = real_realloc(ptr, size);
@@ -405,11 +418,19 @@ void *malloc(size_t size) {
 }
 
 size_t malloc_usable_size(void *ptr) {
-    if (is_shared_malloc_used() || my_is_allocated_by_dlmalloc(ptr)) {
+    if (my_is_allocated_by_dlmalloc(ptr)) {
         return dlmalloc_usable_size(ptr);
     } else {
         return original_malloc_usable_size(ptr);
     }
+}
+
+uint64_t my_hash(unsigned long long *ptr, size_t len) {
+    uint64_t hash = 0;
+    for (size_t i = 0; i < len; i++) {
+        hash = hash * 131 + ptr[i];
+    }
+    return hash;
 }
 
 pid_t fork(void) {
@@ -424,14 +445,49 @@ pid_t fork(void) {
             exit(EXIT_FAILURE);
         }
         pid_t pid;
+        use_share_malloc = false;
+        // fsync(provider_fd);
+        // lseek(provider_fd, 0, SEEK_SET);
+        // uint64_t hash1 =  my_hash((unsigned long long *)shared_memory_ptr, shared_memory_alloc_size / 8);
+        // exit(0);
         pid = real_fork();
-
+        
         if (pid == 0) {
+            // use_share_malloc = true;
+            void *baseaddr = shared_memory_ptr;
+            original_munmap(baseaddr, shared_memory_alloc_size);
+            void* ptr = original_mmap(baseaddr, shared_memory_alloc_size,
+                                     PROT_READ | PROT_WRITE,
+                                     MAP_PRIVATE | MAP_FIXED, provider_fd, 0);
+            if (ptr == MAP_FAILED) {
+                printf("mmap error\n");
+                return pid;
+            }
             sharemalloc_handle_fork();
+           
+            // printf("child forked %ld\n", shared_memory_alloc_size);
             close(pipe_fd[0]);         // 关闭读取端
             write(pipe_fd[1], "1", 1); // 向管道写入一个字符
             close(pipe_fd[1]);         // 关闭写入端
+            // while(1){
+                
+            // // }
+            // exit(0);
+            return pid;
+        }
 
+        // uint64_t hash2 =  my_hash((unsigned long long *)shared_memory_ptr, shared_memory_alloc_size / 8);
+        void *baseaddr = shared_memory_ptr;
+        // original_munmap(baseaddr, shared_memory_alloc_size);
+        // close(provider_fd);
+        // provider_fd = open(shm_path, O_RDWR, S_IRUSR | S_IWUSR | S_IXUSR);
+        void*ptr = original_mmap(baseaddr, shared_memory_alloc_size,
+                                     PROT_READ | PROT_WRITE,
+                                     MAP_PRIVATE | MAP_FIXED , provider_fd, 0);
+        // // uint64_t hash3 =  my_hash((unsigned long long *)shared_memory_ptr, shared_memory_alloc_size / 8);
+        // // printf("fork %d %lx %lx %lx\n", pid, hash1, hash2, hash3);
+        if (ptr == MAP_FAILED) {
+            printf("mmap error\n");
             return pid;
         }
         close(pipe_fd[1]); // 关闭写入端
@@ -439,8 +495,64 @@ pid_t fork(void) {
              1); // 从管道中读取一个字符，这将阻塞父进程直到子进程写入数据
         close(pipe_fd[0]); // 关闭读取端
         printf("forked\n");
+        
         return pid;
     }
 
     return real_fork();
+}
+
+
+void *mmap(void *addr, size_t length, int prot, int flags, int file_fd, off_t offset) {
+    // 在这里添加自定义mmap行为，例如打印调用信息
+    printf("mmap %p %lx %d %d %d %lx %d %d\n", addr, length, prot, flags, file_fd, offset, file_fd == -1 , is_shared_malloc_used());
+    // if (file_fd == -1 && is_shared_malloc_used()){
+    //     pthread_mutex_lock(&lock);
+    //     void* ptr = original_mmap(addr, length, prot, flags, file_fd, offset);
+    //     share_mmap_list_t* l = (share_mmap_list_t*)mspace_malloc(shared_mspace, sizeof(share_mmap_list_t));
+    //     l->ptr = ptr;
+    //     l->length = length;
+    //     l->prot = prot;
+    //     l->file_fd = file_fd;
+    //     l->offset = offset;
+    //     l->flags = flags;
+    //     l->next = share_mmap_list_head->next;
+    //     share_mmap_list_head->next = l;
+    //     pthread_mutex_unlock(&lock);
+    //     return ptr;
+    // }   
+    // 调用原始的mmap函数
+    void *ptr = original_mmap(addr, length, prot, flags, file_fd, offset);
+    printf("mmap %p %lx %d %d %d %lx %d\n", ptr, length, prot, flags, file_fd, offset, file_fd == -1);
+    return ptr;
+}
+
+int  munmap(void *addr, size_t length){
+    // printf("munmap %p %lx\n", addr, length);
+    return 0;
+    return original_munmap(addr, length);
+}
+// #include <stdarg.h>
+void *shared_mremap(void *__addr, size_t old_size, size_t new_size, int flags){
+    // printf("shared_mremap %p %lx %lx %d\n", __addr, old_size, new_size, flags);
+    if (new_size < old_size){
+        return __addr;
+    }
+    // return mremap(__addr, old_size, new_size, flags);
+    void* ptr = mremap(__addr, old_size, new_size, 0);
+   
+    if (ptr != MAP_FAILED){
+        return ptr;
+    }
+    if (flags == 0){
+        assert(0);
+        return MAP_FAILED;
+    }
+    assert(flags == MREMAP_MAYMOVE);
+    ptr = share_malloc_provier_alloc_memory_with_default_addr(new_size);
+    if (ptr == NULL){
+        return MAP_FAILED;
+    }
+    memcpy(ptr, __addr, old_size);
+    return ptr;
 }

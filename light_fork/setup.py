@@ -2,7 +2,7 @@ from setuptools import setup, Extension
 
 module = Extension('lightfork', sources = ['lightfork.c'])
 
-setup(name = 'PackageName',
+setup(name = 'lightfork',
       version = '1.0',
-      description = 'This is a demo package',
+      description = 'This is lightfork',
       ext_modules = [module])

@@ -1,4 +1,4 @@
-# Install script for directory: /home/yuzishu/light_fork/ipdos
+# Install script for directory: /home/lirunfu/request-level-schedule/light_fork/ipdos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yuzishu/light_fork/ipdos/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lirunfu/request-level-schedule/light_fork/ipdos/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
